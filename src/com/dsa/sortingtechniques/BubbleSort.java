@@ -16,7 +16,7 @@ public class BubbleSort {
 
         for (int i = 0; i < n-1; i++) {
             for (int j = 0; j < n-1-i; j++) {
-                int temp = 0;
+                int temp;
                 if (bubble[j] > bubble[j+1]){
                     temp = bubble[j];
                     bubble[j]= bubble[j+1];

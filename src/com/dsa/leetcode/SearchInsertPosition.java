@@ -2,8 +2,8 @@ package com.dsa.leetcode;
 
 import java.util.Scanner;
 
-public interface SearchInsertPosition {
-    static void main(String[] args) {
+public class SearchInsertPosition {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         int[] sortedArr = new int[n];
@@ -17,7 +17,7 @@ public interface SearchInsertPosition {
 
     }
 
-    static int binarySearch(int[] sortedArr, int element){
+    public static int binarySearch(int[] sortedArr, int element){
         int startIndex = 0;
         int endIndex = sortedArr.length - 1;
 

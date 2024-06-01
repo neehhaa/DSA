@@ -14,16 +14,16 @@ public class BubbleSort {
             bubble[i] = input.nextInt();
         }
 
-        for (int i = 0; i < n-1; i++) {
-            for (int j = 0; j < n-1-i; j++) {
+
+        for (int curr = 0; curr < n - 2; curr++) {
+            for (int comp = 0; comp < n - 1 - curr; comp++) {
                 int temp;
-                if (bubble[j] > bubble[j+1]){
-                    temp = bubble[j];
-                    bubble[j]= bubble[j+1];
-                    bubble[j+1] = temp;
+                if (bubble[comp] > bubble[comp + 1]) {
+                    temp = bubble[comp];
+                    bubble[comp] = bubble[comp + 1];
+                    bubble[comp + 1] = temp;
                 }
             }
-            System.out.println(Arrays.toString(bubble));
 
         }
         System.out.println(Arrays.toString(bubble));
